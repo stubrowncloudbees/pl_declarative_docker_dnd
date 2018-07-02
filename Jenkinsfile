@@ -4,7 +4,7 @@ pipeline {
     kubernetes {
       //cloud 'kubernetes'
   
-      label 'pl_declarative_docker_dnd'
+      label 'mypod'
       containerTemplate {
         name 'maven'
         image 'maven:3.3.9-jdk-8-alpine'
