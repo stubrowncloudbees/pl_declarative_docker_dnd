@@ -1,3 +1,4 @@
+def label1 = "pl_scripted_docker_dind-${UUID.randomUUID().toString()}"
 pipeline {
   agent {
     kubernetes {
