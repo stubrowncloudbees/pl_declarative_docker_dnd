@@ -1,9 +1,8 @@
-def label = "pl_declarative_docker_dnd-${UUID.randomUUID().toString()}"
+def label1 = "pl_scripted_docker_dind-${UUID.randomUUID().toString()}"
 pipeline {
   agent {
     kubernetes {
       //cloud 'kubernetes'
-  
       label 'mypod'
       containerTemplate {
         name 'maven'
