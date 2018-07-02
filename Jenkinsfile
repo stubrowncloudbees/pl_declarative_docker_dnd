@@ -3,7 +3,7 @@ pipeline {
   agent {
     kubernetes {
       //cloud 'kubernetes'
-      label "${label}
+      label "${label}"
       containerTemplate {
         name 'maven'
         image 'maven:3.3.9-jdk-8-alpine'
